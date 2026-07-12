@@ -1,8 +1,7 @@
-gensim==4.3.2
-numpy<2.0.0
-scipy<1.13.0
-scikit-learn
-pandas
-nltk
 streamlit
-joblib
+numpy==1.26.4
+gensim==4.3.2
+scikit-learn==1.4.2
+joblib==1.4.2
+pandas==2.2.2
+nltk==3.8.1
