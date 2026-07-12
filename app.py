@@ -12,8 +12,8 @@ st.set_page_config(page_title="Semantic Sentiment Engine", page_icon="💡", lay
 @st.cache_resource
 def bootstrap_models():
     """ Load binary pipelines efficiently using Streamlit's resource cacher. """
-    vectorizer = MeanEmbeddingVectorizer.load("models/w2v_model.model")
-    classifier = joblib.load("models/sentiment_classifier.pkl")
+    vectorizer = MeanEmbeddingVectorizer.load("w2v_model.model")
+    classifier = joblib.load("sentiment_classifier.pkl")
     return vectorizer, classifier
 
 st.title("💡 Sentiment Analysis Engine via Word2Vec")
